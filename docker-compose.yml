@@ -12,7 +12,7 @@ services:
       - PGID=1000
       - TZ=Europe/London
     volumes:
-      - ./config:/config
+      - ./data:/config
     ports:
       - 3000:3000 #optional
     restart: unless-stopped
