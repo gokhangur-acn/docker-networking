@@ -1,0 +1,18 @@
+version: '3.3'
+     
+services:
+    svct1:
+        container_name: t1
+        image: ngnixdemo/hellocontainer
+        ports: 
+          - 81:80
+    svct2:
+        container_name: t2
+        image: ngnixdemo/hellocontainer
+        ports: 
+          - 82:80
+    svct3:
+        container_name: t3
+        image: ngnixdemo/hellocontainer
+        ports: 
+          - 82:80
